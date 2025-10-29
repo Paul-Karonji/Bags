@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bags with Mulan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <svg class="logo-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#F4E4C1;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#C5A572;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="bagGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F4E4C1;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+                            </linearGradient>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <g transform="translate(30, 30)">
+                            <path d="M 10 25 Q 10 20 15 20 L 45 20 Q 50 20 50 25 L 55 55 Q 55 65 45 65 L 15 65 Q 5 65 5 55 Z"
+                                  fill="url(#bagGradient)"
+                                  stroke="#D4AF37"
+                                  stroke-width="1.5"
+                                  opacity="0.95"/>
+                            <path d="M 20 20 Q 20 5 30 5 Q 40 5 40 20"
+                                  fill="none"
+                                  stroke="url(#goldGradient)"
+                                  stroke-width="2.5"
+                                  stroke-linecap="round"/>
+                            <circle cx="30" cy="35" r="3" fill="#D4AF37" opacity="0.8"/>
+                            <line x1="15" y1="30" x2="45" y2="30" stroke="#C5A572" stroke-width="0.5" opacity="0.6"/>
+                        </g>
+                        <text x="95" y="58" font-family="Georgia, serif" font-size="38" font-weight="600" fill="url(#goldGradient)" filter="url(#glow)">Bags</text>
+                        <path d="M 95 68 Q 135 70 175 68" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.5"/>
+                        <text x="98" y="82" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#C5A572" opacity="0.75">with mulan</text>
+                    </svg>
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="shop.html" class="nav-link">Shop</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="cart.html" class="cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section style="padding: 6rem 0 3rem; background-color: white; text-align: center;">
+        <div class="container">
+            <p class="section-subtitle">Our Story</p>
+            <h2 class="section-title">About Bags with Mulan</h2>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section style="padding: 3rem 0 5rem;">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background-color: white; padding: 3rem; border: 1px solid #E0E0E0;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #000;">Who We Are</h3>
+                    <p style="font-size: 1.05rem; color: #666; line-height: 1.8; margin-bottom: 2rem;">
+                        Founded by WIK Technologies, Bags with Mulan brings luxury and elegance to Nairobi's fashion scene.
+                        We specialize in curating premium handcrafted bags that combine style, functionality, and sophistication.
+                    </p>
+
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #000;">Our Mission</h3>
+                    <p style="font-size: 1.05rem; color: #666; line-height: 1.8; margin-bottom: 2rem;">
+                        We believe that the right bag is more than an accessory—it's an expression of your unique style and personality.
+                        Each piece in our collection is carefully selected to meet the highest standards of quality, craftsmanship, and design.
+                    </p>
+
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #000;">Why Choose Us</h3>
+                    <ul style="font-size: 1.05rem; color: #666; line-height: 2; margin-bottom: 2rem; list-style: none; padding: 0;">
+                        <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #D4AF37; font-weight: bold;">✓</span>
+                            Premium quality materials and craftsmanship
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #D4AF37; font-weight: bold;">✓</span>
+                            Curated selection of luxury bags
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #D4AF37; font-weight: bold;">✓</span>
+                            Fast and reliable delivery in Nairobi
+                        </li>
+                        <li style="margin-bottom: 1rem; padding-left: 2rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #D4AF37; font-weight: bold;">✓</span>
+                            Dedicated customer service
+                        </li>
+                        <li style="padding-left: 2rem; position: relative;">
+                            <span style="position: absolute; left: 0; color: #D4AF37; font-weight: bold;">✓</span>
+                            Convenient Cash on Delivery payment option
+                        </li>
+                    </ul>
+
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #000;">Contact Us</h3>
+                    <p style="font-size: 1.05rem; color: #666; line-height: 1.8;">
+                        Have questions or want to know more? Reach out to us at <strong>+254 746 918 175</strong> or
+                        <strong>info@bagswithmulan.co.ke</strong>. We're here to help you find your perfect bag.
+                    </p>
+
+                    <div style="text-align: center; margin-top: 3rem;">
+                        <a href="shop.html" class="btn btn-primary">Explore Our Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BAGS WITH MULAN</h3>
+                    <p>Luxury handcrafted bags for the modern woman.</p>
+                    <p class="footer-credit">Created by WIK Technologies</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <a href="#">Shipping Info</a>
+                    <a href="#">Returns & Exchange</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <p>Nairobi, Kenya</p>
+                    <p>info@bagswithmulan.co.ke</p>
+                    <p>+254 746 918 175</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bags with Mulan. All rights reserved. Powered by WIK Technologies.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
